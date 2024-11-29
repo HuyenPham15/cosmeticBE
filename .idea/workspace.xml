@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c12895f-649d-474c-9ac5-cdcabc0b4a96" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cosmeticstore-app/self-signed.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cosmeticstore-app/self-signed.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/configuration/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/configuration/VNPAYConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/BrandDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/CartItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/DailyRevenueDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/EmployeeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/GHNCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/GHNCreateOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/GHNCreateOrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/GHNItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/MonthlyRevenueDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/OrderDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/PasswordResetDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ProductSizeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ShareRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/Shift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ShiftResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ShippingOrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/SignupDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/TransactionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/UserPointDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/VerificationRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Authorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/DiscountProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/PasswordResetToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/ProductSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/SkinType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Subcategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Transactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/UserPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/WishlistId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/wishlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/AuthoritiesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/BrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/DiscountProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/DiscountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/OrderDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/ProductSizeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/ShopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/SkintypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/StatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/SubcategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/UserPointRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/AddressRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/DiscountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/EmployeeRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/FilterProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/HomeRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/PickupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/ShareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/VNPayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/WishListResController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/AESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/AdminWebSocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/DiscountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/GHNService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/PickupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/ProductSizeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/SubcategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/VNPAYService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/WebSocketHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/util/JwtConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/util/JwtProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/util/JwtTokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/employeeManagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/CosmeticstoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/keystore.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/model/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/usser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/security/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cosmetics/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/css/me.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/js/A.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/A.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/aside.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/aside.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/chinhsuasp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/chinhsuasp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/brand.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/brand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/forgot_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/wishlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cosmetics/CosmeticstoreApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2mmbl82P6muulrv5ldwboBx7xov" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CosmeticstoreApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cosmeticstore&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\DATN\\cosmeticstore\\cosmeticstore-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cosmetics.restcontroller" />
+      <recent name="com.cosmetics.dto" />
+      <recent name="com.cosmetics.service" />
+      <recent name="com.cosmetics.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DATN\cosmeticstore\src\main\java\com\cosmetics\configuration" />
+      <recent name="D:\DATN\cosmeticstore\src\main\java\com\cosmetics\service" />
+      <recent name="D:\DATN\cosmeticstore\src\main\java\com\cosmetics\restcontroller" />
+      <recent name="D:\DATN\cosmeticstore\src\main\java\com\cosmetics\dto" />
+      <recent name="D:\DATN\cosmeticstore\src\main\java\com\cosmetics\repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DATN\cosmeticstore\src\main\resources\static\admin" />
+      <recent name="D:\DATN\cosmeticstore\src\main\resources\templates" />
+      <recent name="D:\DATN\cosmeticstore\src\main\resources\static\user" />
+      <recent name="D:\DATN\cosmeticstore\src\main\resources\static\admin\css" />
+      <recent name="D:\DATN\cosmeticstore\src\main\resources\static" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.cosmetics.configuration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cosmetics.restcontroller" />
+      <recent name="com.cosmetics.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CosmeticstoreApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cosmetics.Main" />
+      <module name="cosmeticstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cosmetics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBCrypt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cosmetics.TestBCrypt" />
+      <module name="cosmeticstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cosmetics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in cosmeticstore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cosmeticstore" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="aside.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cosmeticstore/templates/admin/aside.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="change_password.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cosmeticstore/templates/change_password.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="CosmeticstoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="cosmeticstore" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cosmetics.CosmeticstoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CosmeticstoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="cosmeticstore" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cosmetics.CosmeticstoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/cosmeticstore-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestBCrypt" />
+        <item itemvalue="JavaScript Debug.aside.html" />
+        <item itemvalue="JUnit.All in cosmeticstore" />
+        <item itemvalue="JavaScript Debug.change_password.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c12895f-649d-474c-9ac5-cdcabc0b4a96" name="Changes" comment="" />
+      <created>1727684850880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727684850880</updated>
+      <workItem from="1727684851944" duration="3380000" />
+      <workItem from="1727754898711" duration="60858000" />
+      <workItem from="1728150826082" duration="937000" />
+      <workItem from="1728199615443" duration="1160000" />
+      <workItem from="1728200957015" duration="18219000" />
+      <workItem from="1728295819922" duration="12664000" />
+      <workItem from="1728521602139" duration="54298000" />
+      <workItem from="1728911512633" duration="99475000" />
+      <workItem from="1729346111313" duration="83430000" />
+      <workItem from="1729680117122" duration="21832000" />
+      <workItem from="1729835769376" duration="25404000" />
+      <workItem from="1729932741061" duration="4686000" />
+      <workItem from="1729948697604" duration="128000" />
+      <workItem from="1729948932099" duration="305000" />
+      <workItem from="1729949247487" duration="220000" />
+      <workItem from="1729949533729" duration="9848000" />
+      <workItem from="1730016177434" duration="904000" />
+      <workItem from="1730093996643" duration="3098000" />
+      <workItem from="1730178804175" duration="35441000" />
+      <workItem from="1730351074116" duration="269000" />
+      <workItem from="1730390637865" duration="1967000" />
+      <workItem from="1730435179039" duration="53000" />
+      <workItem from="1730435243990" duration="90000" />
+      <workItem from="1730435342782" duration="3663000" />
+      <workItem from="1730444918322" duration="5079000" />
+      <workItem from="1730463481857" duration="17000" />
+      <workItem from="1730463810074" duration="5980000" />
+      <workItem from="1730604510358" duration="153679000" />
+      <workItem from="1731162470185" duration="135196000" />
+      <workItem from="1731549897179" duration="81392000" />
+      <workItem from="1732106800802" duration="634000" />
+      <workItem from="1732107699180" duration="35251000" />
+      <workItem from="1732800918854" duration="55000" />
+      <workItem from="1732801057664" duration="354000" />
+      <workItem from="1732806001725" duration="7090000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/UserRestController.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cosmetics/restcontroller/AuthController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/user/css/style.css">
+</head>
+
+<body>
+    <header class="d-flex align-items-center">
+        <div class="header-sale col-md-10">
+            <div class="row text-center text-danger">
+                <div class="col">Giao Hàng Nhanh</div>
+                <div class="col">Deal Hốt Hơn Họt</div>
+                <div class="col">Giảm 50%</div>
+                <div class="col">Freeship</div>
+            </div>
+        </div>
+        <div class="header-language ms-auto d-flex align-items-center col-md-2 justify-content-end">
+            <!-- Dropdown ngôn ngữ -->
+            <div class="dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-globe" style="color: #2b2b2b; font-size: 20px;"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tiếng việt</a></li>
+                    <li><a class="dropdown-item" href="#">Tiếng ANh</a></li>
+                </ul>
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="languageSwitch">
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5 col-md-2 text-center" href="index.html">
+                <img src="image/logo.png" alt="Logo" class="d-inline-block align-text-top" style="height: 120px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="search-bar d-flex align-items-center mt-3 col-md-5">
+                    <div class="search-icon me-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <input type="text" placeholder="Search product!!!" class="search-input flex-grow-1">
+                    <button class="search-button ms-3"><span><i
+                                class="fa-solid fa-magnifying-glass"></i></span></button>
+                </div>
+                <div class="d-flex align-items-center me-5 col-md-5 justify-content-center">
+                    <a href="cart.html" class="btn position-relative me-3">
+                        <i class="fas fa-shopping-cart" style="height: 7px;"><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span></i>
+                        Giỏ hàng
+
+                    </a>
+                    <a href="wishlist.html" class="btn me-3">
+                        <i class="fas fa-heart"></i> Yêu Thích
+                    </a>
+                    <a href="../login.html" class="btn me-3">
+                        Đăng nhập/Đăng kí
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Bottom Menu -->
+    <div class="container-fluid py-2 border-top" id="navbarNavDropdown">
+        <div class="d-flex justify-content-center">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fas fa-bars"></i> Danh mục sản phẩm
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="me-3">Giới thiệu</a>
+            <a href="#" class="me-3">Khuyến mãi</a>
+            <a class="dropdown" href="#">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Xu
+                    hướng làm đẹp
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </a>
+            <a class="dropdown" href="#">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Thương
+                    hiệu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </a>
+            <a href="#" class="me-3">Hàng mới về</a>
+            <a href="#" class="me-3">Liên hệ</a>
+        </div>
+    </div>
+
+
+
+    <div class="container product-detail mt-5">
+        <div class="row">
+            <!-- Thumbnails bên trái sản phẩm -->
+            <div class="col-md-1">
+                <div class="thumbnails">
+                    <img src="upload/sp1.1.jpeg" alt="Thumbnail 1" class="thumbnail active"
+                        onclick="changeImage('upload/sp1.1.jpeg')">
+                    <img src="upload/sp1.2.jpeg" alt="Thumbnail 2" class="thumbnail"
+                        onclick="changeImage('upload/sp1.2.jpeg')">
+                    <img src="upload/sp1.3.jpeg" alt="Thumbnail 3" class="thumbnail"
+                        onclick="changeImage('upload/sp1.3.jpeg')">
+                    <img src="upload/sp1.4.jpeg" alt="Thumbnail 4" class="thumbnail"
+                        onclick="changeImage('upload/sp1.4.jpeg')">
+                </div>
+            </div>
+
+            <!-- Hình ảnh sản phẩm -->
+            <div class="col-md-6">
+                <div class="product-image text-center">
+                    <img id="main-image" src="upload/sp1.jpeg" alt="Product Image" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Thông tin sản phẩm -->
+            <div class="col-md-5">
+                <div class="product-info">
+                    <h2>Nước Dưỡng Tóc Tinh Dầu Bưởi Cocoon 140ml</h2>
+                    <p class="brand">Thương hiệu: COCOON | SKU: 30275239</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="badge badge-success">5 đánh giá</span>
+                    </div>
+                    <div class="price">
+                        149,000₫ <del>165,000₫</del>
+                    </div>
+                    <div class="volume">
+                        Dung tích: 140ml
+                    </div>
+                    <div class="product-description">
+                        <ul>
+                            <li>Không chứa cồn, không paraben, không thử nghiệm trên động vật và 100% thuần chay.</li>
+                            <li>Thiết kế dạng chai nhựa dung tích 140ml nhỏ gọn.</li>
+                            <li>Không có cảm giác bết dính, khó chịu sau khi dùng.</li>
+                            <li>Sau một thời gian sử dụng sẽ cảm nhận được hiệu quả rõ rệt.</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <!-- Số lượng sản phẩm -->
+                        <label for="quantity">Số lượng:</label>
+                        <div class="quantity-input-container">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                            <input id="quantity" type="text" value="1" class="quantity-input" readonly>
+                            <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                        <!-- Nút hành động -->
+
+                    </div>
+                    <div class="button d-flex">
+                        <button class="btn btn-warning w-100">Thêm Vào Giỏ Hàng</button>
+                        <button class="btn btn-danger w-100">Mua Ngay</button>
+                    </div>
+                    <!-- Thêm vào danh sách yêu thích và chia sẻ -->
+                    <div class="product-meta mt-2 d-flex">
+                        <p><i class="fas fa-heart"></i> Thêm vào danh sách yêu thích</p>
+                        <p><i class="fas fa-share"></i> Share</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Tabs -->
+    <div class="container-fluid">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description"
+                    type="button" role="tab" aria-controls="description" aria-selected="true">Mô tả sản phẩm</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications"
+                    type="button" role="tab" aria-controls="specifications" aria-selected="false">Thông số</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients"
+                    type="button" role="tab" aria-controls="ingredients" aria-selected="false">Thành phần</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits" type="button"
+                    role="tab" aria-controls="benefits" aria-selected="false">Công dụng</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="usage-tab" data-bs-toggle="tab" data-bs-target="#usage" type="button"
+                    role="tab" aria-controls="usage" aria-selected="false">Cách dùng</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button"
+                    role="tab" aria-controls="reviews" aria-selected="false">Contact</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab"
+                tabindex="0">
+                <h5>Mô tả sản phẩm</h5>
+                <p>
+                    Cocoon là thương hiệu mỹ phẩm thuần chay Việt Nam ra đời năm 2013 và chỉ thật sự được đông đảo khách
+                    hàng biết đến trong một vài năm trở lại đây bởi sự "bùng nổ" với hàng loạt sản phẩm cải tiến vượt
+                    bậc.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab"
+                tabindex="0">
+                <h5>Thông số sản phẩm</h5>
+                <p>
+                    - Dung tích: 140ml <br>
+                    - Loại da phù hợp: Mọi loại da <br>
+                    - Xuất xứ: Việt Nam <br>
+                    - Hạn sử dụng: 12 tháng sau khi mở nắp <br>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="ingredients" role="tabpanel" aria-labelledby="ingredients-tab" tabindex="0">
+                <h5>Thành phần</h5>
+                <p>
+                    - Tinh dầu bưởi Việt Nam <br>
+                    - Vitamin B5 <br>
+                    - Xylishine <br>
+                    - Bisabolol <br>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="benefits" role="tabpanel" aria-labelledby="benefits-tab" tabindex="0">
+                <h5>Công dụng</h5>
+                <p>
+                    - Nuôi dưỡng và chăm sóc tóc khỏe mạnh <br>
+                    - Giảm gãy rụng, kích thích mọc tóc <br>
+                    - Bảo vệ và tái tạo cấu trúc tóc <br>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab" tabindex="0">
+                <h5>Cách dùng</h5>
+                <p>
+                    - Lắc đều chai trước khi sử dụng <br>
+                    - Xoa nhẹ và massage da đầu <br>
+                    - Sử dụng đều đặn 2 lần mỗi ngày <br>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                <h5>Review</h5>
+                <p>
+                    - Sản phẩm rất tốt, đáng để sử dụng thử <br>
+                    - Dùng một thời gian tóc mọc nhanh và giảm gãy rụng <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đánh giá sản phẩm -->
+    <div class="container product-reviews">
+        <h2 class="section-title">Đánh Giá Sản Phẩm</h2>
+        <div class="review-summary">
+            <div class="summary-left">
+                <h1>5/5</h1>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>12 nhận xét</p>
+            </div>
+            <div class="summary-right">
+                <div class="rating-bar">
+                    <div class="bar">
+                        <span>5 sao</span>
+                        <div>
+                            <div class="filled" style="width: 100%;"></div>
+                        </div>
+                        <span class="count">12</span>
+                    </div>
+                    <div class="bar">
+                        <span>4 sao</span>
+                        <div>
+                            <div class="filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="bar">
+                        <span>3 sao</span>
+                        <div>
+                            <div class="filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="bar">
+                        <span>2 sao</span>
+                        <div>
+                            <div class="filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="bar">
+                        <span>1 sao</span>
+                        <div>
+                            <div class="filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Viết
+                    đánh giá</button>
+            </div>
+        </div>
+
+        <h3 class="review-title">Đánh giá & nhận xét</h3>
+        <div class="review">
+            <div class="user-avatar">
+                <img src="img/trica-cream2.webp" alt="User Avatar">
+            </div>
+            <div class="review-content">
+                <div class="review-header">
+                    <h5>Ngân Thanh</h5>
+                    <div class="review-date">2024-08-26 20:33 | Phân loại hàng: SIZE 4: TỪ 12-13KG</div>
+                </div>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="review-text">
+                    Kẻ mắt mới vừa nhận hàng, phải vẽ tới nét thứ 3 thì mới ra mực, k biết có phải là do bút mới nên
+                    mực
+                    chưa ra đều hay không
+                </div>
+                <div class="review-images">
+                    <img src="img/tin1.avif" alt="Review Image">
+                    <img src="img/tin3.avif" alt="Review Image">
+                    <img src="img/tin2.avif" alt="Review Image">
+                </div>
+                <div class="review-like">
+                    <i class="fas fa-thumbs-up"></i> 0
+                </div>
+            </div>
+        </div>
+        <!-- Thêm các đánh giá khác tương tự -->
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+
+    <footer class="footer mt-5">
+        <div class="p-5">
+            <div class="row justify-content-center ms-5">
+                <!-- Logo and Company Info -->
+                <div class="col-md-4 mb-3 ">
+                    <img src="image/logo.png" alt="Company Logo" class="mb-2" style="max-width: 150px;">
+                    <p>CÔNG TY TNHH 4 Anh Em</p>
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp số 030918188, cấp ngày 29/01/2011, nơi cấp sở kế hoạch
+                        và
+                        đầu tư TP HCM.</p>
+                    <p>Trụ sở chính: Tổ X9-012, TP Hồ Chí Minh, VN</p>
+                    <p>Điện thoại: 0123456789</p>
+                    <img src="image/image 24.png" alt="Bộ Công Thương" class="mt-2" style="max-width: 120px;">
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-2 mb-3">
+                    <h6>Theo dõi chúng tôi</h6>
+                    <div class="d-flex">
+                        <a href="#" class="mb-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="mb-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="mb-2"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <div class="flex-column">
+                        <h6>Chấp nhận Phương thức thanh toán</h6>
+                        <img src="image/image 29.png" alt="VNPay" class="mb-2" style="max-width: 100px;">
+                        <img src="image/image 30.png" alt="MoMo" style="max-width: 100px;">
+                    </div>
+                </div>
+
+                <!-- Payment Methods -->
+
+
+                <!-- About Us -->
+                <div class="col-md-2 mb-3 ">
+                    <h6>Về chúng tôi</h6>
+                    <ul class="list-unstyled ">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Cẩm nang làm đẹp</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        <li><a href="#">Cho thuê mặt bằng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div class="col-md-4 mb-3">
+                    <h6>Chính sách</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Chính sách và quy định chung</a></li>
+                        <li><a href="#">Quy định và hình thức thanh toán</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách đổi/trả hàng và hoàn tiền</a></li>
+                        <li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Quy trình xuất hóa đơn điện tử</a></li>
+                        <li><a href="#">Chính sách Thông tin Hội Cầm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4581.7122074656945!2d106.62223831125394!3d10.854452289254485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a213fc53707%3A0x282726c50d505dd2!2zNDIgxJAuIFTDtCBLw70sIFRydW5nIE3hu7kgVMOieSwgUXXhuq1uIDEyLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1727494769344!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-5">
+                    <h4>Địa chỉ cửa hàng</h4>
+                    <div class="location d-flex">
+                        <p><i class="fa-solid fa-location-dot"></i></p>
+                        <p>42 Tô Ký Trung Mỹ Tây Quận 12</p>
+                    </div>
+                    <div class="phone-number d-flex">
+                        <p> <i class="fa-solid fa-phone"></i></p>
+                        <p>024 12345678</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/66069d7296.js" crossorigin="anonymous"></script>
+    <script src="/static/user/js/script.js"></script>
+</body>
+
+</html>

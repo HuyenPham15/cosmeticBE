@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chỉnh Sửa Sản Phẩm</title>
+    <link rel="stylesheet" href="/templates/admin/plugins/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="/templates/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="/templates/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css"/>
+    <link rel="stylesheet" href="/templates/admin/plugins/jqvmap/jqvmap.min.css"/>
+    <link rel="stylesheet" href="/templates/admin/dist/css/adminlte.min.css"/>
+    <link rel="stylesheet" href="/templates/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"/>
+    <link rel="stylesheet" href="/templates/admin/plugins/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="/templates/admin/plugins/summernote/summernote-bs4.min.css"/>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a></li>
+            <li class="nav-item d-none d-sm-inline-block"><a href="../../index3.html" class="nav-link">Home</a></li>
+            <li class="nav-item d-none d-sm-inline-block"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" data-widget="navbar-search" href="#" role="button"><i class="fas fa-search"></i></a>
+                <div class="navbar-search-block">
+                    <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit"><i class="fas fa-search"></i></button>
+                                <button class="btn btn-navbar" type="button" data-widget="navbar-search"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" data-widget="fullscreen" href="#" role="button"><i class="fas fa-expand-arrows-alt"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i class="fas fa-th-large"></i></a></li>
+        </ul>
+    </nav>
+    <!-- Main Sidebar Container -->
+    <th:block th:replace="~{/admin/aside.html}"></th:block>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Chỉnh Sửa Sản Phẩm</h3>
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse"><i class="fas fa-minus"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form th:action="@{/save}" th:object="${product}" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="title">Tên Sản Phẩm</label>
+                                        <input type="text" id="title" name="tensp" path="tensp" class="form-control" th:field="*{name}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="href">Mã Sản Phẩm</label>
+                                        <input type="text" id="href" name="masp" path="masp" class="form-control" th:field="*{productID}" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button type="button" id="add-size-btn" class="btn btn-primary">Thêm Kích Thước</button>
+                                        </div>
+                                        <div id="size-container">
+                                            <!-- Các kích thước sẽ được thêm vào đây -->
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="description">Mô Tả Sản Phẩm</label>
+                                                    <textarea id="description" name="mota" th:field="*{description}" class="form-control" rows="4"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Collection</label>
+                                                    <select class="form-control" th:field="*{collection.IDCollection}">
+                                                        <option th:each="coll : ${collections}" th:value="${coll.IDCollection}" th:text="${coll.nameCollection}"/>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Product Type</label>
+                                                    <select class="form-control" th:field="*{productTypeIDs}">
+                                                        <option th:each="type : ${productTypes}" th:value="${type.productTypeID}" th:text="${type.name}"/>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Skin Concern</label>
+                                                    <select class="form-control" th:field="*{skinconcernIDs}">
+                                                        <option value="" disabled>Chọn Skin Concern</option>
+                                                        <option th:each="concern : ${skinConcerns}" th:value="${concern.skinConcernID}" th:text="${concern.name}"/>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Ảnh Sản Phẩm</label>
+                                                    <button type="button" class="btn btn-primary" onclick="document.getElementById('imageUpload').click();">Upload Folder</button>
+                                                    <input type="file" id="imageUpload" name="files" multiple style="display: none;" onchange="previewImages(event)" />
+                                                </div>
+                                                <div id="thumbnail" class="col-12">
+                                                    <div class="thumbnail-previews" id="thumbnailPreviews">
+                                                        <div th:each="image : ${product.imagesList}" class="thumbnail">
+                                                            <img th:src="@{/img/{image}(image=${image.imagePath})}" alt="Thumbnail" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn bg-gradient-success btn-md">Submit</button>
+                                        <button formaction="${pageContext.request.contextPath}/update" type="submit" class="btn bg-gradient-warning btn-md">Update</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="/src/main/webapp/templates/admin/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="/src/main/webapp/templates/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>$.widget.bridge('uibutton', $.ui.button)</script>
+    <!-- Bootstrap 4 -->
+    <script src="/templates/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="/templates/admin/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="/templates/admin/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="/templates/admin/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/templates/admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="/templates/admin/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="/templates/admin/plugins/moment/moment.min.js"></script>
+    <script src="/templates/admin/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="/src/main/webapp/templates/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="/src/main/webapp/templates/admin/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="/src/main/webapp/templates/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/src/main/webapp/templates/admin/dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/src/main/webapp/templates/admin/dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="/src/main/webapp/templates/admin/dist/js/pages/dashboard.js"></script>
+
+    <script>
+        document.getElementById("add-size-btn").addEventListener("click", function() {
+    var sizeContainer = document.getElementById("size-container");
+
+    // Tạo div chứa các trường nhập liệu cho kích thước
+    var newFormGroup = document.createElement("div");
+    newFormGroup.classList.add("form-group", "row", "mb-2");
+
+    // Tạo label và input cho tên kích thước
+    var newSizeLabel = document.createElement("label");
+    newSizeLabel.innerText = "Tên Kích Thước";
+    newSizeLabel.classList.add("col-form-label");
+
+    var newSizeDiv = document.createElement("div");
+    newSizeDiv.classList.add("col-md-2");
+    newSizeDiv.appendChild(newSizeLabel);
+
+    var newSizeInput = document.createElement("input");
+    newSizeInput.type = "text";
+    newSizeInput.name = "sizes[]";
+    newSizeInput.classList.add("form-control");
+
+    newSizeDiv.appendChild(newSizeInput);
+
+    // Tạo label và select cho đơn vị tính
+    var newUnitLabel = document.createElement("label");
+    newUnitLabel.innerText = "Đơn Vị Tính";
+    newUnitLabel.classList.add("col-form-label");
+
+    var newUnitDiv = document.createElement("div");
+    newUnitDiv.classList.add("col-md-2");
+    newUnitDiv.appendChild(newUnitLabel);
+
+    var newUnitSelect = document.createElement("select");
+    newUnitSelect.name = "units[]";
+    newUnitSelect.classList.add("form-control");
+
+    var units = ["gói", "g", "ml"];
+    units.forEach(function(unit) {
+        var option = document.createElement("option");
+        option.value = unit;
+        option.textContent = unit;
+        newUnitSelect.appendChild(option);
+    });
+
+    newUnitDiv.appendChild(newUnitSelect);
+
+    // Tạo label và input cho giá tiền
+    var newPriceLabel = document.createElement("label");
+    newPriceLabel.innerText = "Giá Tiền";
+    newPriceLabel.classList.add("col-form-label");
+
+    var newPriceDiv = document.createElement("div");
+    newPriceDiv.classList.add("col-md-2");
+    newPriceDiv.appendChild(newPriceLabel);
+
+    var newPriceInput = document.createElement("input");
+    newPriceInput.type = "text";
+    newPriceInput.name = "prices[]";
+    newPriceInput.classList.add("form-control");
+
+    newPriceDiv.appendChild(newPriceInput);
+
+    // Tạo label và input cho số lượng
+    var newQuantityLabel = document.createElement("label");
+    newQuantityLabel.innerText = "Số Lượng";
+    newQuantityLabel.classList.add("col-form-label");
+
+    var newQuantityDiv = document.createElement("div");
+    newQuantityDiv.classList.add("col-md-2");
+    newQuantityDiv.appendChild(newQuantityLabel);
+
+    var newQuantityInput = document.createElement("input");
+    newQuantityInput.type = "number";
+    newQuantityInput.name = "quantitys[]";
+    newQuantityInput.classList.add("form-control");
+
+    newQuantityDiv.appendChild(newQuantityInput);
+
+    // Thêm các div chứa thông tin kích thước vào form group
+    newFormGroup.appendChild(newSizeDiv);
+    newFormGroup.appendChild(newUnitDiv);
+    newFormGroup.appendChild(newPriceDiv);
+    newFormGroup.appendChild(newQuantityDiv);
+
+    // Thêm form group vào container
+    sizeContainer.appendChild(newFormGroup);
+});
+
+function previewImages(event) {
+    var files = event.target.files;
+    var previewContainer = document.getElementById("thumbnailPreviews");
+    previewContainer.innerHTML = ""; // Xóa các hình ảnh hiện tại
+
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        var reader = new FileReader();
+
+        reader.onload = (function(theFile) {
+            return function(e) {
+                var img = document.createElement("img");
+                img.src = e.target.result;
+                img.classList.add("thumbnail-img");
+                previewContainer.appendChild(img);
+            };
+        })(file);
+
+        reader.readAsDataURL(file);
+    }
+}
+
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,885 @@
+header {
+    background-color: #fefce6;
+    padding: 10px 20px;
+}
+
+.header-sale .col {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header-language a i {
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 4px 4px 4px 24px;
+    width: 700px;
+    background: #FFFFFF;
+    border: 1px solid #E0E3EB;
+    border-radius: 24px;
+}
+
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #555;
+    background: transparent;
+    padding: 0 10px;
+}
+
+.search-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    gap: 4px;
+    width: auto;
+    background: #E7E0EC;
+    border-radius: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 1px solid #E7E0EC;
+    color: #000000;
+    ;
+}
+
+
+.container-fluid {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+}
+
+.container-fluid a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.container-fluid a:hover {
+    color: #9e6c57;
+}
+
+.container-fluid .fa-bars {
+    margin-right: 5px;
+    /* Khoảng cách giữa icon và text */
+}
+
+.d-flex {
+    gap: 15px;
+    /* Khoảng cách giữa các liên kết */
+    align-items: center;
+    /* Căn giữa dọc các liên kết */
+}
+
+.discount img {
+    padding-bottom: 5px;
+    height: 197px;
+    width: 600px;
+}
+
+.col-3 img {
+    width: 55%;
+    height: 50%;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e71e1e;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 10;
+    border-radius: 32px;
+    width: 45px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hiển thị lớp phủ khi hover vào thẻ card */
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Nút Add to cart */
+.btn-light {
+    background-color: white;
+    color: #E89F71;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.btn-light:hover {
+    background-color: #f7f7f7;
+    color: #E89F71;
+}
+
+/* Nút Share và Like */
+.btn-link {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-link:hover .fa-heart {
+    color: rgb(235, 88, 88);
+    /* Đổi màu thành đỏ khi hover */
+}
+
+.mySwipers img {
+    width: 200px;
+    height: 200px;
+}
+
+.carousel-inner img {
+    width: 750px;
+    height: 500px;
+}
+
+.blog img {
+    width: 100%;
+    height: 500px;
+}
+
+.footer {
+    background-color: #ebe7e0;
+}
+
+.footer .container {
+
+    border-top: 1px solid #959191;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    /* Removes underline */
+    color: #333;
+    padding: 15px;
+    /* Sets the color of the links */
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    /* Optional: Adds underline on hover */
+
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+/* Chatbot Button */
+.chatbot-button {
+    position: fixed;
+    bottom: 80px;
+    /* Adjust if needed */
+    right: 20px;
+    z-index: 999;
+    background-color: #e3c09d;
+    /* Background color */
+    color: white;
+    /* Icon color */
+}
+
+.chatbot-button:hover {
+    background-color: #e3c09d;
+}
+
+.chatbox {
+    display: none;
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.chatbox-header {
+    background-color: #e3c09d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chatbox-body {
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.chatbox-footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.chatbox-footer input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.chatbox-footer button {
+    background-color: #e3c09d;
+    color: white;
+}
+
+.chatbox-footer button:hover {
+    background-color: #e3c09d;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+/* Back-to-Top Button */
+.back-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.back-to-top {
+    background-color: #e3c09d;
+    /* Background color */
+    color: white;
+    /* Icon color */
+}
+
+.back-to-top:hover {
+    background-color: #e3c09d;
+}
+
+
+/* Brand */
+.breadcrumb {
+    background-color: #f8f9fa;
+    padding: 5px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.alphabet-list .page-link {
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.alphabet-list .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.alphabet-list .page-item:hover .page-link {
+    background-color: #f1f1f1;
+}
+
+.brand-for img {
+    width: 250px;
+}
+
+/* Giỏ hàng */
+.remove-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.checkout {
+    background-color: #FFA500;
+    color: #ffffff;
+    width: 250px;
+}
+
+.checkout:hover {
+    background-color: #FF9900;
+    color: #FFFFFF;
+}
+
+/* Đăng kí */
+
+h2 {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #080909;
+}
+
+/* Thiết lập màu cam nhạt cho input */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ffa500;
+    background-color: #fff4e0;
+    color: #ff8c00;
+    padding: 10px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control::placeholder {
+    color: #ce7e2f;
+}
+
+.form-control:focus {
+    border-color: rgba(255, 184, 98, 0.874);
+    box-shadow: 0 0 5px rgba(255, 184, 98, 0.874);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #db9d38;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ec9861;
+}
+
+/* Nút mạng xã hội */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.social-buttons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #161515;
+    transition: color 0.3s ease;
+}
+
+.social-buttons a:hover {
+    color: #007bff;
+}
+
+/* Liên kết đăng nhập */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: rgba(255, 184, 98, 0.874);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #ce7e2f;
+}
+
+/* Đăng nhập */
+.text-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.form-check-input {
+    background-color: #ee7c31c4;
+    /* Màu nền khi được tích */
+
+}
+
+
+.form-check-input {
+    outline: none;
+    /* Bỏ viền mặc định */
+    appearance: none;
+    /* Ẩn checkbox mặc định */
+    width: 15px;
+    /* Kích thước của checkbox */
+    height: 15px;
+    /* Kích thước của checkbox */
+    border: 2px solid #ffa500;
+    /* Màu viền cam nhạt */
+    border-radius: 4px;
+    /* Đường viền bo tròn */
+    cursor: pointer;
+    /* Hiển thị con trỏ khi hover */
+    position: relative;
+    /* Để sử dụng với pseudo-elements */
+}
+
+.form-check-input:checked {
+    background-color: #ffa500;
+    /* Màu nền cam khi được tích */
+    border-color: #ffa500;
+    /* Màu viền cũng là màu cam */
+}
+
+/* đổi mật khẩu */
+
+
+.change-password-form h3 {
+    color: #333;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 1px solid #ffa500;
+    background-color: #fff4e0;
+    color: #ff8c00;
+    padding: 10px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: rgba(255, 184, 98, 0.874);
+    box-shadow: 0 0 5px rgba(255, 184, 98, 0.874);
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.input-group-text i {
+    color: #ff8c00;
+}
+
+.input-group-text:hover i {
+    color: #ec9861;
+}
+
+.btn-back {
+    color: #ffa500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-back:hover {
+    color: #ec9861;
+}
+
+button[type="submit"] {
+    background-color: #db9d38;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ec9861;
+}
+
+/* Product Detail */
+.product-detail {
+    display: flex;
+    margin-top: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    border: 2px solid #007bff;
+}
+
+.product-detail .product-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.product-detail .product-info {
+    flex: 1.5;
+    padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info .brand {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.product-info .rating {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    font-size: 28px;
+    color: #e60023;
+    margin-top: 10px;
+}
+
+.price del {
+    font-size: 18px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.product-description ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.product-actions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quantity-input-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.quantity-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quantity-btn:hover {
+    background-color: #a48f71;
+    color: #fff;
+}
+
+.quantity-btn:focus {
+    outline: none;
+}
+
+.btn-lg {
+    margin-right: 10px;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.product-meta {
+    color: #888;
+}
+
+.product-meta p {
+    margin: 0;
+    cursor: pointer;
+}
+
+.product-meta p:hover {
+    color: #dd4a34;
+}
+
+.product-meta i {
+    margin-right: 5px;
+}
+
+/* Tab Content */
+.nav-tabs {
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+    padding: 15px 20px;
+    margin-right: 10px;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #ddd #ddd #f8f9fa;
+    background-color: #f8f9fa;
+}
+
+.tab-content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tab-content h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tab-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Product Reviews */
+.product-reviews {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Tóm tắt đánh giá */
+.review-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Phần hiển thị số điểm đánh giá lớn và sao */
+.summary-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.summary-left h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.star-rating {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.summary-left p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Phần hiển thị các thanh tiến trình đánh giá */
+.summary-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.rating-bar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.rating-bar .bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rating-bar .bar span {
+    width: 40px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.rating-bar .bar div {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+
+.rating-bar .bar .filled {
+    height: 100%;
+    background-color: #f39c12;
+}
+
+.rating-bar .bar .count {
+    width: 40px;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Nút viết đánh giá */
+.btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+
+/* Phần hiển thị đánh giá chi tiết */
+.review {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.user-avatar {
+    margin-right: 20px;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.review-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.review-header .review-date {
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.star-rating {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.review-content .review-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.review-images {
+    display: flex;
+    margin-top: 10px;
+}
+
+.review-images img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
